@@ -3,3 +3,5 @@
 ################################################################################
 
 /TestProjectUnitTests/.vs/UnitTests/v15/Server/sqlite3
+/TestProjectUnitTests/log.xml
+/TestProjectUnitTests/log.html
