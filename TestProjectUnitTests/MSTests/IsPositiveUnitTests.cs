@@ -1,22 +1,17 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class IsPositiveUnitTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CheckIsPositiveWithDouble()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            double a = - 88;
+            double a = - 88.36987521;
 
             //Act
             var actualResult = calculator.isPositive(a);
@@ -25,12 +20,12 @@ namespace MSTests
             Assert.AreEqual(false, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckIsPositiveWithInt()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            int a = 20896;
+            int a = 2089650;
 
             //Act
             var actualResult = calculator.isPositive(a);

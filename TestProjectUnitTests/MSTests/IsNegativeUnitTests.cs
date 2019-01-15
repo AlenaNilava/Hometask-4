@@ -1,22 +1,17 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class IsNegativeUnitTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CheckIsNegativeWithDouble()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            double a = 9;
+            double a = 90268.987322;
 
             //Act
             var actualResult = calculator.isNegative(a);

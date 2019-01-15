@@ -1,18 +1,13 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.Threading;
+
+    [TestClass]
     public class CosUnitTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CheckCos180()
         {
             Thread.Sleep(10000);
@@ -27,7 +22,7 @@ namespace MSTests
             Assert.AreEqual(-1, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckCos360()
         {
             Thread.Sleep(10000);

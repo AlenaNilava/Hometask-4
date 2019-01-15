@@ -1,33 +1,28 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class DivideUnitTests
     {
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckDivideWithDouble()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            int a = 355;
-            double b = 5;
+            int a = 355589;
+            double b = 5.1;
 
             //Act
             var actualResult = calculator.Divide(a, b);
 
             //Assert
-            Assert.AreEqual(71, actualResult);
+            Assert.AreEqual(69723.333333333343, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckDivideIntDouble()
         {
             //Arrange

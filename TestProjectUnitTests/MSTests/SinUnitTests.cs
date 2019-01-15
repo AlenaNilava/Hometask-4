@@ -1,17 +1,12 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class SinUnitTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CheckSin360()
         {
             //Arrange
@@ -22,7 +17,7 @@ namespace MSTests
             var actualResult = calculator.Sin(a);
 
             //Assert
-            Assert.AreEqual(1, actualResult);
+            Assert.AreEqual(1, actualResult, 0.05);
         }
     }   
 }

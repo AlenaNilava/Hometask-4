@@ -1,18 +1,13 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class SubUnitTests
     {
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckSubWithDouble()
         {
             //Arrange
@@ -27,7 +22,7 @@ namespace MSTests
             Assert.AreEqual(452.36, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckSubWithInt()
         {
             //Arrange

@@ -1,22 +1,19 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ConsoleApplication3;
-using System;
-using System.Reflection;
-using CSharpCalculator;
-
-namespace ConsoleApplication3.Tests
+﻿namespace MSTests
 {
-	[TestClass()]
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using CSharpCalculator;
+
+    [TestClass]
 	public class AddUnitTests
 	{
 
-		[TestMethod()]
+		[TestMethod]
 		public void CheckAddWithInt()
 		{
             //Arrange
             Calculator calculator = new Calculator();
-            int a = 3;
-            double b = 2;
+            int a = 35236874;
+            double b = 232.05987;
 
             //Act
             var actualResult = calculator.Add(a, b);
@@ -25,7 +22,7 @@ namespace ConsoleApplication3.Tests
             Assert.AreEqual(5, actualResult);
 		}
 
-        [TestMethod()]
+        [TestMethod]
         [DataRow(3, 2, 5)]
         [DataRow(-3, -2, -5)]
         public void CheckDDTAddWithInt(int a, int b, int expectedValue)
@@ -40,22 +37,22 @@ namespace ConsoleApplication3.Tests
             Assert.AreEqual(expectedValue, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckAddWithDouble()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            double a = 3;
-            double b = 2;
+            double a = 3032.036850;
+            double b = 2.589742;
 
             //Act
             var actualResult = calculator.Add(a, b);
 
             //Assert
-            Assert.AreEqual(5, actualResult);
+            Assert.AreEqual(3034.626592, actualResult);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckAddWithString()
         {
             //Arrange

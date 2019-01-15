@@ -1,17 +1,12 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class SqrtUnitTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CheckSqrt()
         {
             //Arrange
@@ -25,18 +20,18 @@ namespace MSTests
             Assert.AreEqual(10, actualResult);
         }
 
-        [TestMethod()]
-        public void CheckSqrt300()
+        [TestMethod]
+        public void CheckSqrtDouble()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            double a = 300;
+            double a = 855.10;
 
             //Act
             var actualResult = calculator.Sqrt(a);
 
             //Assert
-            Assert.AreEqual(17.320508075688775, actualResult);
+            Assert.AreEqual(9.2195444572928871, actualResult);
         }
     }
 }

@@ -1,30 +1,25 @@
-﻿using CSharpCalculator;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSTests
+﻿namespace MSTests
 {
-    [TestClass()]
+    using CSharpCalculator;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
     public class MultiplyUnitTests
     {
 
-        [TestMethod()]
+        [TestMethod]
         public void CheckMultiplyWithDoubleInt()
         {
             //Arrange
             Calculator calculator = new Calculator();
-            int a = 10;
-            double b = 5;
+            int a = -105000;
+            double b = 5.36666;
 
             //Act
-            var actualResult = calculator.Divide(a, b);
+            var actualResult = calculator.Multiply(a, b);
 
             //Assert
-            Assert.AreEqual(50, actualResult);
+            Assert.AreEqual(-563499.3, actualResult);
         }
     }
 }

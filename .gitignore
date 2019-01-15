@@ -5,3 +5,9 @@
 /TestProjectUnitTests/.vs/UnitTests/v15/Server/sqlite3
 /TestProjectUnitTests/log.xml
 /TestProjectUnitTests/log.html
+/TestProjectUnitTests/.vs/UnitTests/v15
+/TestProjectUnitTests/MSTests/bin/Debug
+/TestProjectUnitTests/MSTests/obj/Debug
+/TestProjectUnitTests/NUnit/bin/Debug
+/TestProjectUnitTests/NUnit/obj/Debug
+/TestProjectUnitTests/packages
